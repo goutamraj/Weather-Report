@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=humidity_high"
+    />
+    <script type="module" src="script.js" defer></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="search-box">
+          <input
+            type="text"
+            placeholder="Enter your location"
+            class="input-box"
+          />
+          <button
+            class="fa-solid fa-magnifying-glass-location"
+            id="searchBtn"
+          ></button>
+        </div>
+      </div>
+      <div class="city">
+        <h1 class="city-name"></h1>
+      </div>
+      <div class="weather-body">
+        <div class="error">
+          <h4 class="error-message"></h4>
+        </div>
+        <img src="assets/cloud.png" alt="Weather image" class="weather-image" />
+        <div class="weather-box">
+          <p class="temperature">0&deg;C</p>
+          <p class="description">Light Rain</p>
+        </div>
+        <div class="weather-details">
+          <div class="humidity">
+            <i class="fa-solid fa-droplet"></i>
+            <div class="text">
+              <span id="humidity">0%</span>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="windspeed">
+            <i class="fa-solid fa-wind"></i>
+            <div class="text">
+              <span id="wind-speed">0KM/H</span>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/3a777d5350.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
